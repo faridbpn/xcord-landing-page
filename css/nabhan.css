@@ -1,0 +1,166 @@
+/* utility */
+html.sr .load-hidden {
+  visibility: hidden;
+}
+
+/* ini buat video utama pas web pertama kali di load yang ada tulisan mas baban */
+.video-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.video-background video {
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  color: white;
+  text-align: center;
+  padding-top: 20%;
+}
+
+.content-about {
+  position: relative;
+  z-index: 1;
+  color: white;
+  text-align: center;
+  padding: 20%;
+}
+
+/* bagian yang ada 6 foto kecil disampingnya */
+.image-background-idea {
+  top: 0;
+  left: 0;
+  width: fit-content;
+  height: fit-content;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.image-background-idea image {
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.content-idea {
+  position: relative;
+  z-index: 1;
+  color: white;
+  text-align: left;
+  padding: 5%;
+}
+
+.content-idea h1 {
+  font-size: 4rem;
+}
+
+.side-videos-idea {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  position: relative;
+  z-index: 1;
+  padding: 5%;
+}
+
+.side-videos-idea img {
+  width: 100%;
+  height: auto;
+  border: 2px solid white;
+}
+
+.side-videos-idea .video-item-idea {
+  flex: 1 1 45%;
+  max-width: 45%;
+}
+
+@media (min-width: 768px) {
+  .side-videos-idea .video-item-idea {
+    flex: 1 1 30%;
+    max-width: 30%;
+  }
+}
+
+.overlay-idea {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 0;
+}
+
+/* bagian history */
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.text {
+  font-size: 3em;
+}
+
+.image-container {
+  position: relative;
+}
+
+.image {
+  width: 150px;
+  height: 150px;
+  background-color: red;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5em;
+  position: absolute;
+}
+
+.image1 {
+  top: 0;
+  left: 50px;
+}
+
+.image2 {
+  top: 70px;
+  left: 100px;
+}
+
+#demo-svg path {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 0;
+}
+
+@keyframes buble {
+  0% {
+      border-radius: 60% 30% 40% 70%/60% 30% 70% 40%;
+  }
+  50% {
+      border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+  }
+  100% {
+      border-radius: 60% 30% 40% 70%/60% 30% 70% 40%;
+  }
+}
