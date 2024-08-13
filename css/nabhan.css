@@ -1,7 +1,3 @@
-/* utility */
-html.sr .load-hidden {
-  visibility: hidden;
-}
 
 /* ini buat video utama pas web pertama kali di load yang ada tulisan mas baban */
 .video-background {
